@@ -57,6 +57,7 @@ export const InviteIcon = styled(PersonAdd)`
 export const SettingIcon = styled(Settings)`
 	width: 16px;
 	height: 16px;
+	margin-left: 4px;
 
 	color: var(--symbol);
 	cursor: pointer;

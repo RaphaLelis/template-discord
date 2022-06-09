@@ -6,7 +6,7 @@ const ChannelInfo: React.FC = () =>{
 		<Container>
 			<HashTagIcon/>
 
-			<Title>chat-livre</Title>
+			<Title>geral</Title>
 
 			<Separator/>
 
