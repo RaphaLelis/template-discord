@@ -24,11 +24,12 @@ export const Button = styled.button<Props>`
 	}
 
 	&::before{
+		//button hasNotification
 		width: 9px;
 		height: 9px;
 
 		position: absolute;
-		left: -17px:;
+		left: -17px;
 		top: calc(50% - 4.5px);
 
 		background-color: var(--white);
@@ -38,6 +39,26 @@ export const Button = styled.button<Props>`
 		display: ${props => props.hasNotifications ? 'inline' : 'none'};
 	}
 	&::after{
+		//button mentions
+		background-color: var(--notification);
+		width: auto;
+		height: 16px;
+
+		padding: 0 4px;
+		position: absolute;
+		bottom: -4px;
+		right: -4px;
+
+		border-radius: 12px;
+		border: 4px solid var(--quaternary);
+		text-align: right;
+		font-size: 13px;
+		font-weight: bold;
+		color: var(--white);
+
+		content: '${(props) => props.mentions && props.mentions}';
+		display: ${props => props.mentions && props.mentions > 0 ? 'inline' : 'none'};
+
 
 	}
 	transition: border-radius .2s, brackground-color .2s;
