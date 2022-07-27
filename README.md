@@ -1,6 +1,7 @@
 # Discord Template
 
 <img src="https://arquivos-lelis.s3.us-east-2.amazonaws.com/img/discord+template.png" alt="discord imagem">
+https://discord-padrex.netlify.app/
 
 > Projeto para demonstrar um template do aplicativo discord em React e Typescript.
 
